@@ -21,11 +21,13 @@ declare module "convert-units" {
     type uEnergy = "Wh" | "mWh" | "kWh" | "MWh" | "GWh" | "J" | "kJ"; // Energy
     type uReactiveEnergy = "VARh" | "mVARh" | "kVARh" | "MVARh" | "GVARH"; // Reactive Energy
     type uAngle = "deg" | "rad" | "grad" | "arcmin" | "arcsec"; // Angle
+    type uMilimol = "mmol/L" | "mol/L" | "umol/L" | "nmol/L"; // Angle
     type uLiquid = "g/ul" | "g/L" | "g/dL" | "g/mL" | "mg/ul" | "mg/L" | "mg/dL" | "mg/mL" | "K/ul" | "K/L" | "K/dL" | "K/mL" | "pg/mL" | "pg/L" | "pg/ul" | "pg/dL" | "ng/dL" | "ng/L" | "ng/mL" | "ng/uL"; // Angle
 
 
     type unit = uDistance 
               | uArea 
+              | uMilimol 
               | uLiquid 
               | uMass 
               | uVolume 
@@ -51,6 +53,7 @@ declare module "convert-units" {
     type measure = "distance" 
                  | "area" 
                  | "mass" 
+                 | "milimol" 
                  | "volume" 
                  | "liquid" 
                  | "volumeFlowRate" 
